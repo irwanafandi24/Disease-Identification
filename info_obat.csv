@@ -1,0 +1,15 @@
+id_penyakit,nama_obat,harga,butuh,satuan,nama_toko,url
+1,-,0,0,-,none,#
+2,Obat A,10000,3,botol,toko 1,https://www.youtube.com
+2,Obat A,12500,3,botol,toko 2,https://www.youtube.com
+2,Obat B,8000,4,botol,toko 1,https://www.youtube.com
+2,Obat C,15000,4,kg,toko 3,https://www.youtube.com
+2,Obat D,25000,2,kg,toko 4,https://www.youtube.com
+3,Obat A1,20000,2,kg,toko 1,https://www.youtube.com
+3,Obat A1,22000,2,kg,toko 2,https://www.youtube.com
+3,Obat A1,19500,2,kg,toko 3,https://www.youtube.com
+3,Obat B1,30000,1,kg,toko 1,https://www.youtube.com
+3,Obat B1,33000,1,kg,toko 2,https://www.youtube.com
+4,Obat A2,15000,4,botol,toko 1,https://www.youtube.com
+4,Obat B2,17000,3,botol,toko 2,https://www.youtube.com
+4,Obat B3,20000,2,botol,toko 3,https://www.youtube.com

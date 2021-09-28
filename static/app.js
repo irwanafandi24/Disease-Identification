@@ -8,6 +8,7 @@ function onClickedAnalysis(){
     var diseaseInfo = document.getElementById("disease_info");
     var diseaseTreatment = document.getElementById("disease_treatment");
     var recommendationTable = document.getElementById("dataTable");
+    var messageObat = document.getElementById("message_obat")
     var temp = "";
     var idx = 0;
 
@@ -32,13 +33,15 @@ function onClickedAnalysis(){
             idx++;
             temp += "<tr>";
             temp += "<td>"+idx.toString()+"</td>";
-            temp += "<td>"+u.pesticide+"</td>";
-            temp += "<td>"+u.price+"</td>";
-            temp += "<td>"+u.need+"</td>";
-            temp += "<td><a href='"+u.url_store+"' target='_blank'>"+u.store+"</a></td>";
+            temp += "<td>"+u.nama_obat+"</td>";
+            temp += "<td>"+u.harga+"</td>";
+            temp += "<td>"+u.butuh+" "+u.satuan+"</td>";
+            temp += "<td><a href='"+u.url+"' target='_blank'>"+u.nama_toko+"</a></td>";
             temp += "</tr>";
         })
-        recommendationTable.innerHTML = temp;
+        recommendationTable.innerHTML = temp,
+        messageObat.innerHTML = "<p>"+data.message+"</p>";
+
     });
     console.log("done process")
 }
