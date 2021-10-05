@@ -5,9 +5,18 @@
 <p align="center"><img src="asset/main_page.png" width=100%></p> 
 
 ### Let's Get Started
-If you want to try this project to your local system, just follow this step :
+If you want to try this project to your local system, just follow this step (I assume, you have installed PyCharm in your PC):
 <ol>
-  <li>saya zakaria suka makan nasi nasi dan lauk</li>
-  <li>saya pesan nasi dan tahu</li>
-  <li>tahu buat makan</li>
+  <li>Clone this project to your local PC.</li>
+  <li>Open your terminal and go to the project folder. Start to install requirements python library using this command: <br><i><b>pip install -r requirements.txt</b></i>
+  <li>Build model ResNet50 in folder model > resnet50_padi_jgg_500.ipynb using jupyter notebook or google colab. To make it faster, just download our ready model <a href="https://drive.google.com/file/d/1m-SPJFvq9GnmJoaF4BKREq1mUe9RNQOg/view?usp=sharing">ResNet50 here</a>.</li>
+  <li>Put the model you have downloaded to Disease-Identification folder (at the same folder with main.py)</li>
+  <li>Open Pycharm and load your project, make sure you use a correct interpreter (requirements library already installed). If there is an error because of library not found, you can install it by your own using: <i><b>pip install library_name</b></i></li>
+  <li>Run the main.py file and wait a minutes (2-5 minutes to load the model)</li>
+  <li>If successful, you will get an IP http://127.0.0.1:5000/ to load your webpage.</li>
 </ol>
+
+**Project Output**
+<p align="center"><img src="asset/predict_page.png" width=100%></p> 
+🎉 Congrats... Now, you can start to try our project. Feel free to do feature improvements and just contact me if you get any problems. Happy coding guys :)
+
