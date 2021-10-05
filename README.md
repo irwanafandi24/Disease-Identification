@@ -1,2 +1,5 @@
-# Disease-Identification
-Disease Identification is end-to-end computer vision project that allow user to identify disease in a plant leaf by giving the picture to the system. After the system identify the disease, it will give the user the treatment and pesticide (more than one) recommendation for the plant. We hope that this project can help Indonesian farmers in caring for crops.
+# Disease Identification
+<p align="justify">Disease Identification is end-to-end image classification project that allow user to identify a disease in a plant leaf by giving the leaf image to the system. The System will identify the disease using ResNet50 model where the model accuracy reaches 86.12%. After the system get the disease, the result will be used to perform a query select on the data to get treatment and pesticide recommendations for the plant. For pesticide recommendation, farmer can select and compare with pesticide is easier to get at a lower price. We hope that this project can help Indonesian farmers in caring for crops. <b><i>This is just MVP product</i></b>, feel free to develop for feature improvement.</p>
+
+**Project Overview**
+<p align="center"><img src="asset/technical_approach.png" width=100%></p> 
