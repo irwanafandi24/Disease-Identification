@@ -62,12 +62,17 @@ def get_disease_info(disease_id):
 
 def get_obat_info(disease_id, landArea, minPrice, maxPrice):
     message = "Pestisida yang berhasil ditemukan"
-    result = df_obat[(df_obat.id_penyakit == disease_id) & ((df_obat.harga >= minPrice) & (df_obat.harga <= maxPrice))]
+    result = df_obat.copy()
+    result.butuh = result.butuh * landArea
+    result.harga = result.harga * landArea
+    result = result[(result.id_penyakit == disease_id) & ((result.harga >= minPrice) & (result.harga <= maxPrice))]
     if result.shape[0] == 0:
-        result = df_obat[(df_obat.id_penyakit == disease_id)]
+        result = df_obat.copy()
+        result.butuh = result.butuh * landArea
+        result.harga = result.harga * landArea
+        result = result[(result.id_penyakit == disease_id)]
         message = "Pestisida dengan harga Rp "+str(minPrice)+"-"+str(maxPrice)+" kosong. Berikut list pestisida yang tersedia."
     result = result.sort_values(by=['nama_obat', 'harga'])
-    result.butuh = result.butuh * landArea
     return result.to_dict(orient='records'), message
 
 
